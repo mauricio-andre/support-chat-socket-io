@@ -1,0 +1,16 @@
+### Criar novo settings
+POST http://localhost:3333/settings HTTP/1.1
+Content-Type: application/json
+
+{
+  "chat": false,
+  "username": "admin"
+}
+
+### Update Chat options
+PUT http://localhost:3333/settings/admin HTTP/1.1
+Content-Type: application/json
+
+{
+  "chat": true
+}

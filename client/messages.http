@@ -1,0 +1,11 @@
+### Criar nova mensagem
+POST http://localhost:3333/messages HTTP/1.1
+Content-Type: application/json
+
+{
+  "userId": "260e6a51-dcaf-46d7-8da7-0148586653c9",
+  "text": "Message example"
+}
+
+### Buscas lista de mensagens por usuários
+GET http://localhost:3333/messages/260e6a51-dcaf-46d7-8da7-0148586653c9 HTTP/1.1
